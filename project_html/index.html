@@ -5,46 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Google</title>
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <nav>
-      <div class="navbar">
-        <div class="navbar_links">
-          <ul class="links_left">
-            <li><a href="">about</a></li>
-            <li><a href="">store</a></li>
-          </ul>
-          <ul class="links_right">
+    <nav class="navbar">
+          <ul class="nav_links" id="nav-left">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Store</a></li>
+            </ul>
+            <ul class="nav_links" id="nav-right">
             <li><a href="#">Gmail</a></li>
             <li><a href="#">Images</a></li>
-            <li><a href="#"><img class="menu_img" src="images/noun_grid.png" alt="Grid Menu"></a></li>
-            <li><a href="#">avatar
-            </a></li>
+            <div><img class="menu_img" src="images/grid.png" alt="Grid Menu"></div>
+            <div class="avatar"><h1>D</h1></div>
           </ul>
-        </div>
-      </div>
     </nav>
   </header>
   <main>
     <section class="main_body">
-      <div class="google_logo"><img src="images\googlelogo_color_272x92dp.png" alt="Google Logo"></div>
-      <form action="" id="search_bar">
-        <input type="text" name="search" value="">
-        <input type="submit" class="button" name="Google Search" value="Google Search">
-        <input type="submit" class="button" name="" value="I'm feeling lucky">
-      </form>
+      <center>
+        <div class="google_logo"><img src="images\googlelogo_color_272x92dp.png" alt="Google Logo"></div>
+        <form action="" id="search_bar">
+          <input type="text" name="search" value="">
+        </form>
+        <div class="buttons">
+          <input class="button" type="button" name="btn" value="Google Search">
+          <input class="button" type="button" name="btn" value="I'm Feeling lucky">
+
+        </div>
+      </center>
+
+
     </section>
   </main>
   <footer>
     <div class="footer_nav">
-      <ul class="footer_links_left">
+      <ul class="footer_links" id="footer_left">
         <li><a href="#">Advertising</a></li>
         <li><a href="#">Business</a></li>
         <li><a href="#">How Search Works</a></li>
       </ul>
-      <ul class="footer_links_right">
+      <ul class="footer_links" id="footer_right">
         <li><a href="#">Privacy</a></li>
         <li><a href="#">Terms</a></li>
         <li><a href="#">Settings</a></li>
